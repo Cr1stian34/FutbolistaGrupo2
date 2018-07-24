@@ -1,6 +1,6 @@
 using namespace std;
 class Integrante{
-	string id;
+	int id;
 	string nombre;
 	string apellido;
 	int edad;
@@ -8,14 +8,14 @@ class Integrante{
 		//Constructores
 		Integrante(){
 		}
-		Integrante(string id,string nombre, string apellido, int edad){
+		Integrante(int id,string nombre, string apellido, int edad){
 			this->id=id;
 			this->nombre=nombre;
 			this->apellido=apellido;
 			this->edad=edad;
 		}
 		//Metodos Acceso
-		string getId(){
+		int getId(){
 			return id;
 		}
 		string getNombre(){
@@ -28,7 +28,7 @@ class Integrante{
 			return edad;
 		}
 		//Metodos Modificacion
-		void setId(string id){
+		void setId(int id){
 			this->id=id;
 		}
 		void setNombre(string nombre){
