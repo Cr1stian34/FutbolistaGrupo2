@@ -5,7 +5,7 @@ class Futbolista: public Integrante{
 	string demarcacion;
 	
 	public:
-		Futbolista(int dorsal, string demarcacion, string id, string nombre, string apellido, int edad){
+		Futbolista(int dorsal, string demarcacion, int id, string nombre, string apellido, int edad){
 			this->dorsal=dorsal;
 			this->demarcacion=demarcacion;
 		}
@@ -21,7 +21,8 @@ class Futbolista: public Integrante{
 			cout << "\nDorsal : "; cin >> dorsal;
 			cout << "\nDemarcacion : "; cin >> demarcacion;
 			
-			string lid, lnombre, lapellido;
+			int lid;
+			string lnombre, lapellido;
 			int ledad;
 			
 			cout << "\nId : "; cin>> lid;

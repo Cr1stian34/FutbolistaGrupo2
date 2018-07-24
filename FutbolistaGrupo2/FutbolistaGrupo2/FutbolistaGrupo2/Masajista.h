@@ -5,7 +5,7 @@ class Masajista: public Integrante{
 	string aniosExperiencia;
 	
 	public:
-		Masajista(string titulacion, string aniosExperiencia, string id, string nombre, string apellido, int edad){
+		Masajista(string titulacion, string aniosExperiencia, int id, string nombre, string apellido, int edad){
 			this->titulacion=titulacion;
 			this->aniosExperiencia=aniosExperiencia;
 		}
@@ -21,7 +21,8 @@ class Masajista: public Integrante{
 			cout << "\nTitulacion : "; cin >> titulacion;
 			cout << "\nAniosExperiencia : "; cin >> aniosExperiencia;
 			
-			string lid, lnombre, lapellido;
+			int lid;
+			string lnombre, lapellido;
 			int ledad;
 			
 			cout << "\nId : "; cin>> lid;
